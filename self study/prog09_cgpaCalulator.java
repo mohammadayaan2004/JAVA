@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class prog9_cgpaCalulator {
+public class prog09_cgpaCalulator {
     public static boolean valid (int num){
         if(num>=0 && num<=100)
         return true;

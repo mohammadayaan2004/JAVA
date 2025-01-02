@@ -2,7 +2,7 @@
 //Write a Program to calculate percentage of a given student in CBSE board exam. 
 //His marks from 5 Subjects must be taken as input from the keyboard: (Marks are out of 100).
 import java.util.Scanner;
-public class prog6_question 
+public class prog06_question 
 {
     public static boolean valid (int num)
     {

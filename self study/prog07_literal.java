@@ -1,4 +1,4 @@
-public class prog7_literal 
+public class prog07_literal 
 {
     public static void main(String[] args) 
     {

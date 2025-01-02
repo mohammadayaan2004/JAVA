@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class prog5_gettingUserInput
+public class prog05_gettingUserInput
 {
     public static void main(String[] args)
     {

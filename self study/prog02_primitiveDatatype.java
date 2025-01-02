@@ -1,4 +1,4 @@
-public class prog2_primitiveDatatype {
+public class prog02_primitiveDatatype {
     public static void main(String arg[]){
     System.out.println("byte Datatype :- ");
     System.out.println("Min :- "+ Byte.MIN_VALUE +" and Max :- " +Byte.MAX_VALUE );

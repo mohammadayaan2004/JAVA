@@ -1,21 +1,22 @@
-/*
-https://www.naukri.com/code360/problems/n-2-forest_6570178
- *  *
- *  **
- *  ***
- *  ****
- *  *****
- */
-
+/* 
+https://www.naukri.com/code360/problems/n-triangles_6573689
+ * 1
+ * 1 2
+ * 1 2 3 
+ * 1 2 3 4
+ * 1 2 3 4 5
+*/
 import java.util.Scanner;
-public class prog56_rightHalfPyramid {
+public class prog62_numberIncreasingPyramidPattern {
     public static void nForest(int n)
     {
         for(int i=1;i<=n;i++)
         {
+            int k=1;
             for(int j=1;j<=i;j++)
             {
-                System.out.print("*");
+                System.out.print(k);
+                k++;
             }
             System.out.println(" ");
         }

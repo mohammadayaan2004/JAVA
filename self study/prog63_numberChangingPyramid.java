@@ -1,21 +1,20 @@
 /*
-https://www.naukri.com/code360/problems/n-2-forest_6570178
- *  *
- *  **
- *  ***
- *  ****
- *  *****
+1  
+2 3  
+4 5 6  
+7 8 9 10 
  */
-
 import java.util.Scanner;
-public class prog56_rightHalfPyramid {
+public class prog63_numberChangingPyramid {
     public static void nForest(int n)
     {
+        int k=1;
         for(int i=1;i<=n;i++)
         {
             for(int j=1;j<=i;j++)
             {
-                System.out.print("*");
+                System.out.print(k+" ");
+                k++;
             }
             System.out.println(" ");
         }

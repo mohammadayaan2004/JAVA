@@ -1,4 +1,4 @@
-public class prog4_explicitConversion {
+public class prog04_explicitConversion {
     public static void main(String[] args) {
     float count= 63.45f;
     int countint=(int)count;

@@ -5,11 +5,13 @@
  *         4 4 4 4 
  *        5 5 5 5 5
  */
-public class prog61_numberTriangular {
-    public static void main(String[] args) {
-        for(int i=1;i<=5;i++)
+import java.util.Scanner;
+public class prog61_numberTriangular  {
+    public static void nForest(int n)
+    {
+        for(int i=1;i<=n;i++)
         {
-            for(int j=1;j<=5-i;j++)//space
+            for(int j=1;j<=n-i;j++)//space
             {
                 System.out.print(" ");
             }
@@ -17,7 +19,15 @@ public class prog61_numberTriangular {
             {
                 System.out.print(i+" ");
             }
+            
             System.out.println(" ");
         }
+    }
+    public static void main(String[] args) {
+        System.out.print("Number of rows :- ");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        nForest(n);
+        sc.close();
     }
 }

@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class prog8_sumofThreeNumber {
+public class prog08_sumofThreeNumber {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int a,b,c,total;
