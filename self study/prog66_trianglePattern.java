@@ -1,12 +1,11 @@
 /*
-https://www.naukri.com/code360/problems/increasing-number-triangle_6581893?leftPanelTabValue=PROBLEM
-1  
-2 3  
-4 5 6  
-7 8 9 10 
+https://www.naukri.com/code360/problems/triangle_6573690
+1
+2 2 
+3 3 3
  */
 import java.util.Scanner;
-public class prog63_numberChangingPyramid {
+public class prog66_trianglePattern {
     public static void nForest(int n)
     {
         int k=1;
@@ -15,8 +14,8 @@ public class prog63_numberChangingPyramid {
             for(int j=1;j<=i;j++)
             {
                 System.out.print(k+" ");
-                k++;
             }
+            k++;
             System.out.println(" ");
         }
     }
