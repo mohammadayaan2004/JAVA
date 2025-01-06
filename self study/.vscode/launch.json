@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "prog70_PascalTraingle",
+            "request": "launch",
+            "mainClass": "prog70_PascalTraingle",
+            "projectName": "self study_df0f6e27"
+        },
+        {
+            "type": "java",
             "name": "prog69_HallowReverseTrianglePattern",
             "request": "launch",
             "mainClass": "prog69_HallowReverseTrianglePattern",
