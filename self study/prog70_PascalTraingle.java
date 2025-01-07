@@ -1,14 +1,25 @@
 /*
-   
+    1  
+   1 1  
+  1 2 1  
+ 1 3 3 1  
  */
 import java.util.Scanner;
 public class prog70_PascalTraingle  {
     public static void nForest(int n) {
+        int k=1;
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <=n-i ; j++) 
             {
-               System.out.print("*");
+               System.out.print(" ");
             }
+            k=1;
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print(k+" ");
+                k=k*(i-j)/(j);  //nCr
+            }
+            
             System.out.println(" ");
         }
     }
