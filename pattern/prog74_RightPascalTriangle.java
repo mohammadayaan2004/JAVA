@@ -1,4 +1,4 @@
-/*
+/*/
 *    
  *   
 * *  
@@ -6,7 +6,7 @@
 * *  
  *   
 * 
- */
+/*/
 import java.util.Scanner;
 public class prog74_RightPascalTriangle {
     public static void nForest(int n) {
