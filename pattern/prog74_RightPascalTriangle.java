@@ -13,7 +13,7 @@ public class prog74_RightPascalTriangle {
         for (int i = 1; i <=2*n-1; i++) {
             for (int j = 1; j <=n ; j++)
             {
-                if ((i==j)||(i+j==2*n)) {
+                if ((i==j)||(i+j==2*n)||(i%2==0 && j%2==0)||(i%2==1 && j%2==1)) {
                     System.out.print("*");// PRINT
                 } else {
                     System.out.print(" ");// SPACE
