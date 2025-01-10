@@ -8,25 +8,12 @@
    * 
  */
 import java.util.Scanner;
-public class prog73_HolowDiamondPyramid  {
+public class prog74_RightPascalTriangle {
     public static void nForest(int n) {
-        //upper pyramid
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <=2*n-1 ; j++)
+        for (int i = 1; i <=2*n-1; i++) {
+            for (int j = 1; j <=n ; j++)
             {
-                if ((i + j == n+1)||j-i == n-1) {
-                    System.out.print("*");// PRINT
-                } else {
-                    System.out.print(" ");// SPACE
-                }
-            } 
-            System.out.println(" ");
-        }
-        //lower pyramid
-        for (int i = 2; i <= n; i++) {
-            for (int j = 1; j <=2*n-1 ; j++)
-            {
-                if ((i + j == 2*n)||j-i == 0) {
+                if ((i==j)||(i+j==2*n)) {
                     System.out.print("*");// PRINT
                 } else {
                     System.out.print(" ");// SPACE
