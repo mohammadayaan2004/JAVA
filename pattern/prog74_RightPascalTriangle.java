@@ -31,8 +31,7 @@ public class prog74_RightPascalTriangle {
                 }   
             } 
             System.out.println(" ");
-        }
-       
+        }       
     }    
     public static void main(String[] args) {
         System.out.print("Number of rows :- ");
