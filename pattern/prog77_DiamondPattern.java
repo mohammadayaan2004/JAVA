@@ -1,5 +1,11 @@
 /*/
-
+   * 
+  * * 
+ * * * 
+* * * * 
+ * * * 
+  * * 
+   *
 /*/
 import java.util.Scanner;
 public class prog77_DiamondPattern 
