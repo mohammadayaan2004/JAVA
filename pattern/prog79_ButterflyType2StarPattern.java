@@ -6,6 +6,7 @@
 ***  ***
 **    **
 *      *   
+https://www.naukri.com/code360/problems/symmetry_6581914
 /*/
 import java.util.Scanner;
 public class prog79_ButterflyType2StarPattern {
