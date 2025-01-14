@@ -6,5 +6,6 @@ public class prog19_IncrementDecrementOperator {
         System.out.println("Post increment operator(b++) :- "+(b++));//FIRST USE THE VALUE AND THEN INCREMENT IT
         System.out.println("Pre decrement (--c) :- "+(--c)); // FIRST DECREMENT VALUE AND THEN USE IT
         System.out.println("Post decrement (d--) :- "+(d--));//FIRST USE THE VALUE AND THEN DECREMENT IT
+        System.out.println(d);
     }    
 }
