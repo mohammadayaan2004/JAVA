@@ -6,6 +6,7 @@
 //**    **
 //***  ***
 //******** 
+//https://www.naukri.com/code360/problems/symmetric-void_6581919?leftPanelTabValue=SUBMISSION
 import java.util.Scanner;
 public class prog88_HollowDiamondSquarePattern
 {
