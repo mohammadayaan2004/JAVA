@@ -1,4 +1,4 @@
-/*
+/* floyd triangle
 https://www.naukri.com/code360/problems/increasing-number-triangle_6581893?leftPanelTabValue=PROBLEM
 1  
 2 3  
