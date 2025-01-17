@@ -5,7 +5,7 @@
 4321234   
 /*/
 import java.util.Scanner;
-public class prog63_PalindromeTriangular {
+public class prog92_PalindromeTriangular {
     public static void nForrest(int n) {
         for (int i = 1; i <=  n  ; i++) {
             for (int j = 1; j <= n-i ; j++) {
