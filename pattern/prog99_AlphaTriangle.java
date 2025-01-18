@@ -1,10 +1,9 @@
 /*
 https://www.naukri.com/code360/problems/alpha-triangle_6581429    \
-A
-   ABA
-  ABCBA
- ABCDCBA
-ABCDEDCBA
+D
+DC
+DCB
+DCBA
 */
 import java.util.Scanner;
 public class prog99_AlphaTriangle {
