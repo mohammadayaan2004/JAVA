@@ -1,5 +1,6 @@
+package numberPrograms;
 import java.util.Scanner;
-public class prog54_factorial {
+public class prog03_factorial {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number :- ");

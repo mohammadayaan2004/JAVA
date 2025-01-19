@@ -1,5 +1,6 @@
+package numberPrograms;
 import java.util.Scanner;
-public class prog52_primeNumber {
+public class prog01_primeNumber {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number :- ");

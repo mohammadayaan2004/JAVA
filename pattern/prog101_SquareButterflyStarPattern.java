@@ -26,7 +26,6 @@ public class prog101_SquareButterflyStarPattern {
             System.out.println();
         }
     }
-
     public static void main(String[] args) {
         System.out.print("Enter the number of rows: ");
         Scanner sc = new Scanner(System.in);
