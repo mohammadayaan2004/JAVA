@@ -1,20 +1,23 @@
-
-/*/
-*      *
-**    **
-* *  * *
-*  **  *
-*  **  *
-* *  * *
-**    **
-*      *   
-/*/
+/*
+************
+**        **
+* *      * *
+*  *    *  *
+*   *  *   *
+*    **    *
+*    **    *
+*   *  *   *
+*  *    *  *
+* *      * *
+**        **
+************
+*/
 import java.util.Scanner;
-public class prog85_HollowButterflyStarPattern {
+public class prog101_SquareButterflyStarPattern {
     public static void nForrest(int n) {
         for (int i = 1; i <= 2 * n; i++) {
             for (int j = 1; j <= 2 * n; j++) {
-                if (j == 1 || i == j || j == 2 * n || i + j == 2 * n + 1) {
+                if (i == j || i + j == 2 * n + 1||i==1 || i==2*n || j==1 || j==2*n) {
                     System.out.print("*");
                 } else {
                     System.out.print(" ");

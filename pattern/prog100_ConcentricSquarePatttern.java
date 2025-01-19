@@ -12,13 +12,12 @@ import java.util.Scanner;
 public class prog100_ConcentricSquarePatttern {
     public static void nForest(int n)
     {
-        int size=2*n-1,start=1,end=size;
-        int arr[][]=new int[size][size];
-        for (int i = start; i <= end ; i++) {
-            for (int j = start; j <= end ; j++) {
-                if(i==start || i==end || j==start || j==end) {
-                    arr[i][j]=n;
-                }               
+        int size=2*n-1;
+        for (int i = 1; i <= size ; i++) {
+            for (int j = 1; j <= size ; j++) {
+                int top=i-1,left=j-1,right=size-j,down=size-i;
+                int num=n-Math.min(Math.min(top,down),Math.min(right,left));
+                System.out.print(num);
             }
             System.out.println();
         }
