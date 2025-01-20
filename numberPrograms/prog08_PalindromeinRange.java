@@ -7,17 +7,18 @@ public class prog08_PalindromeinRange {
         int ll=sc.nextInt();
         System.out.print("Enter the upper limit :- ");
         int ul=sc.nextInt();
-        int reverse=0,lastdigit;
+        System.out.println("Palindromes in the range are :-");
         for(int i=ll;i<=ul;i++)
         {
-            int temp=i,duplicate=i;
+            int reverse=0,lastdigit;
+            int temp=i;
             while(temp>0){
-            lastdigit=i%10;
+            lastdigit=temp%10;
             reverse=reverse*10+lastdigit;
             temp/=10;
-            if(duplicate==reverse){System.out.print(duplicate+" ");}
-            }
         }
+        if(i==reverse){System.out.print(i+" ");}
+    }
         sc.close();
     }    
 }
