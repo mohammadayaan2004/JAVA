@@ -1,6 +1,6 @@
 package numberPrograms;
 import java.util.Scanner;
-public class prog02_fibonacciSeries {
+public class prog04_fibonacciSeries {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number :- ");
