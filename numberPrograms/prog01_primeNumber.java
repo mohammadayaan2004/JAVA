@@ -1,3 +1,4 @@
+//https://www.naukri.com/code360/problems/check-prime_624934?leftPanelTabValue=SUBMISSION
 package numberPrograms;
 import java.util.Scanner;
 public class prog01_primeNumber {

@@ -54,24 +54,32 @@ Constraints:
 Time Limit: 1 sec
  */
 package numberPrograms;
+
 import java.util.Scanner;
-    public class prog11_sumOfDivisors 
-    {
-        public static int sumOfAllDivisors(int n)
-        {
-            int sum=0;
-            for(int i=1;i<=n;i++)
-            {
-               sum+=(n/i)*i;
-            }
-            return sum;
+
+public class prog11_sumOfDivisors {
+    public static int sumOfAllDivisors(int n) {
+        int sum = 0;
+        for (int i = 1; i <= n; i++) {
+            /*
+             * for(int j=1;j<=i;j++)
+             * {
+             * if(i%j==0)
+             * {
+             * sum+=j;
+             * }
+             * } O(n^3)
+             */
+            sum += (n / i) * i;// o(n)
         }
-        public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number :- ");
-        int n=sc.nextInt();
+        int n = sc.nextInt();
         System.out.println(sumOfAllDivisors(n));
         sc.close();
-        }
     }
-    
+}
