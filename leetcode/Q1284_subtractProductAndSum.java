@@ -20,9 +20,7 @@ Sum of digits = 4 + 4 + 2 + 1 = 11
 Result = 32 - 11 = 21
  */
 package leetcode;
-
 import java.util.Scanner;
-
 public class Q1284_subtractProductAndSum {
     public static int subtractProductAndSum(int n) {
         int digit;
