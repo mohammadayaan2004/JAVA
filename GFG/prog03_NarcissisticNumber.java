@@ -22,25 +22,20 @@ import java.util.Scanner;
 public class prog03_NarcissisticNumber {
     public static int isNarcissistic(int n) {
         int duplicate=n;
-        int count = countDigit(n);
+        int count = 0;
+        while (n > 0) {
+            count++;
+            n /= 10;
+        }
+        n=duplicate;
         double sum = 0;
         while (n > 0) {
             int digit = n % 10;
             sum = sum + Math.pow(digit,count);
             n /= 10;
         }
-        if(duplicate==sum) {return 1;}
-        else {return 0;}
-    }
-
-    public static int countDigit(int n) {
-        int count = 0;
-        while (n > 0) {
-            count++;
-            n /= 10;
-        }
-        return count;
-    }
+        return (duplicate==sum)?1:0;
+    }   
 
     public static void main(String[] args) {
         System.out.print("Enter Number :- ");
