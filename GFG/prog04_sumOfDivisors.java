@@ -53,11 +53,11 @@ Constraints:
 
 Time Limit: 1 sec
  */
-package numberPrograms;
+package GFG;
 
 import java.util.Scanner;
 
-public class prog11_sumOfDivisors {
+public class prog04_sumOfDivisors {
     public static int sumOfAllDivisors(int n) {
         int sum = 0;
         for (int i = 1; i <= n; i++) {
