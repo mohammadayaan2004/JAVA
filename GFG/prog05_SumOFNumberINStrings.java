@@ -2,15 +2,19 @@ package GFG;
 import java.util.Scanner;
 public class prog05_SumOFNumberINStrings {
     public static int findSum(String s) {
-        int str=Integer.valueOf(s);
         int sum=0;
-        while(str>0){
-            int lastdigit=str%10;
-            if(!(lastdigit>=47 && lastdigit<=58)){
-                sum+=lastdigit;
+        String temp="0";
+        for(int i=0;i<s.length();i++){
+            char ch=s.charAt(i);
+            if(Character.isDigit(ch)){
+                temp+=ch;
             }
-        }
-        return sum;
+            else{
+                sum+=Integer.parseInt(temp);
+                temp="0";
+            }
+        }       
+        return sum+Integer.parseInt(temp);
     }
 
     public static void main(String[] args) {
