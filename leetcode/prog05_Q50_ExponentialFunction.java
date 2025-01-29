@@ -24,7 +24,7 @@ Either x is not zero or n > 0.
  */
 package leetcode;
 import java.util.Scanner;
-public class Q50_ExponentialFunction {
+public class prog05_Q50_ExponentialFunction {
     public static double myPow(double x, long n) {
         double result=1;
         long exp=Math.abs(n);

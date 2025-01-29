@@ -21,7 +21,7 @@ Result = 32 - 11 = 21
  */
 package leetcode;
 import java.util.Scanner;
-public class Q1284_subtractProductAndSum {
+public class prog02_Q1284_subtractProductAndSum {
     public static int subtractProductAndSum(int n) {
         int digit;
         int product=1,sum=0;

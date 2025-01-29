@@ -28,7 +28,7 @@ Follow up: Could you solve it without converting the integer to a string?
  */
 package leetcode;
 import java.util.Scanner;
-public class Q09_Palindrome  {
+public class prog01_Q09_Palindrome  {
     public static boolean isPalindrome(int n) {
         int temp=n,lastdigit,reverse=0;
         while(n>0){

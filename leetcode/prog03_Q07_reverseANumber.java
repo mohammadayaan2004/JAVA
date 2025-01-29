@@ -26,7 +26,7 @@ Constraints:
  */
 package leetcode;
 import java.util.Scanner;
-public class Q07_reverseANumber {
+public class prog03_Q07_reverseANumber {
 public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the number :- ");

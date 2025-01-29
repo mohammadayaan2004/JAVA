@@ -50,7 +50,8 @@ public class prog05_SumOfNumberInStrings {
         }       
         return sum+num;
     }
-
+    //T.C=O(n)
+    //S.C=O(1)
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number :- ");

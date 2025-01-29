@@ -27,7 +27,7 @@ package leetcode;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
-public class Q1832_CheckifSentenceISPragram{
+public class prog04_Q1832_CheckifSentenceISPragram{
     public static boolean checkIfPangram(String s) {
         Set<Character> set =new HashSet<>();
         for(int i=1;i<=s.length();i++)
