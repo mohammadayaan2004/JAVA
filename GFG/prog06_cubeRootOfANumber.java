@@ -43,10 +43,8 @@ solution2}  int n=Math.abs(num);
             return (num<0)?-ans:ans;
             T.C.--->O(log n)
             S.C.--->O(1)*/
-            int root=(int)Math.sqrt(num);//O(1)
-            while(root*root*root>num) root--;
-            while((root+1)*(root+1)*(root+1)<=num) root++;
-            return root;
+            
+            return (int) (Math.cbrt(num));
             //O(∛n)
     }
     public static void main(String[] args) {
