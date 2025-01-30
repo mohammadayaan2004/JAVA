@@ -25,13 +25,13 @@ public class prog06_cubeRootOfANumber {
         T.C.--->O(∛n)
         S.C.--->O(1)
         */
+        if (num == 0 || num == 1) return num;
         int n=Math.abs(num);
-        if (n == 0 || n == 1) return n;
         int low=1,high=n,ans=0;
         while(low<=high){
             int mid=low+(high-low)/2;
             long cube=(long)mid*mid*mid;
-            if(cube==n) return mid;
+            if(cube==n) return (num < 0) ? -mid : mid;
             else if(cube<n){
                 ans=mid;
                 low=mid+1;
@@ -41,6 +41,9 @@ public class prog06_cubeRootOfANumber {
             }
         }
         return (num<0)?-ans:ans;
+        //T.C.--->O(log n)
+        //S.C.--->O(1)
+
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
