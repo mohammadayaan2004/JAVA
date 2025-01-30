@@ -18,32 +18,36 @@ package GFG;
 import java.util.Scanner;
 public class prog06_cubeRootOfANumber {
     public static int cubeRoot(int num) {
-        /*if (n == 0 || n == 1) return n;
-        int i;
-        for(i=1;i*i*i<n;i++);
-        return i-1;
-        T.C.--->O(∛n)
-        S.C.--->O(1)
-        */
-        if (num == 0 || num == 1) return num;
-        int n=Math.abs(num);
-        int low=1,high=n,ans=0;
-        while(low<=high){
-            int mid=low+(high-low)/2;
-            long cube=(long)mid*mid*mid;
-            if(cube==n) return (num < 0) ? -mid : mid;
-            else if(cube<n){
-                ans=mid;
-                low=mid+1;
+        /*  if (n == 0 || n == 1) return n;
+solution 1} int i;
+            for(i=1;i*i*i<n;i++);
+            return i-1;
+            T.C.--->O(∛n)
+            S.C.--->O(1)
+        
+            if (num == 0 || num == 1) return num;
+solution2}  int n=Math.abs(num);
+            int low=1,high=n,ans=0;
+            while(low<=high){
+                int mid=low+(high-low)/2;
+                long cube=(long)mid*mid*mid;
+                if(cube==n) return (num < 0) ? -mid : mid;
+                else if(cube<n){
+                    ans=mid;
+                    low=mid+1;
+                }
+                else{
+                    high=mid-1;
+                }
             }
-            else{
-                high=mid-1;
-            }
-        }
-        return (num<0)?-ans:ans;
-        //T.C.--->O(log n)
-        //S.C.--->O(1)
-
+            return (num<0)?-ans:ans;
+            T.C.--->O(log n)
+            S.C.--->O(1)*/
+            int root=(int)Math.sqrt(num);//O(1)
+            while(root*root*root>num) root--;
+            while((root+1)*(root+1)*(root+1)<=num) root++;
+            return root;
+            //O(∛n)
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
