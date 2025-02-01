@@ -23,7 +23,8 @@ public class prog07_ClosestNumber {
         int val2=val1 + (n > 0 ? m : -m);
 
         return (Math.abs(n-val1)<Math.abs(n-val2))?val1:val2;
-
+//O(1) (constant time)
+//O(1) (constant space)
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
