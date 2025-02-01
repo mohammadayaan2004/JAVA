@@ -19,16 +19,10 @@ import java.util.Scanner;
 public class prog07_ClosestNumber {
     public static int closestNumber(int n, int m) {
         m = Math.abs(m);
-        int q=n/m;
-        int val1=m*q;
-        int val2;
+        int val1=m*(n/m);
+        int val2=val1 + (n > 0 ? m : -m);
 
-        if(n>=0) val2=val1+m;
-        else val2=val1-m;
-
-        if(Math.abs(n-val1)>Math.abs(n-val2)) return val2;
-        else if(Math.abs(n-val1)<Math.abs(n-val2)) return val1;
-        else return (Math.abs(val1)>Math.abs(val2))?val1:val2;
+        return (Math.abs(n-val1)<Math.abs(n-val2))?val1:val2;
 
     }
     public static void main(String[] args) {
