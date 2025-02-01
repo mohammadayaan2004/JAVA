@@ -3,7 +3,6 @@ https://www.geeksforgeeks.org/problems/closest-number5728/1
 Given two integers n and m. The problem is to find the number closest to n and divisible by m. If there is more than one such number, then output the one having the maximum absolute value.
 
 Examples :
-
 Input: n = 13 , m = 4
 Output: 12
 Explanation: 12 is the Closest Number to 13 which is divisible by 4.
@@ -19,14 +18,18 @@ package GFG;
 import java.util.Scanner;
 public class prog07_ClosestNumber {
     public static int closestNumber(int n, int m) {
-        if(m>n) return 0;
-        int num=0;
-        for(int i=1;i<=n;i++){
-            if(i%m==0){
-                num=i;
-            }
-        }
-        return num;
+        m = Math.abs(m);
+        int q=n/m;
+        int val1=m*q;
+        int val2;
+
+        if(n>=0) val2=val1+m;
+        else val2=val1-m;
+
+        if(Math.abs(n-val1)>Math.abs(n-val2)) return val2;
+        else if(Math.abs(n-val1)<Math.abs(n-val2)) return val1;
+        else return (Math.abs(val1)>Math.abs(val2))?val1:val2;
+
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
