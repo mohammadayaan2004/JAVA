@@ -1,10 +1,10 @@
 package GFG;
 import java.util.Scanner;
-import java.math.BigInteger;
 public class prog08_CheckIfDivisibleBy36 {
     public static int checkDivisible36(String S) {
-         num=Integer.parseInt(S);
-        if(num%36==0) return 1;
+        java.math.BigInteger num= new java.math.BigInteger(S);
+        if(num.mod(java.math.BigInteger.valueOf(36)).equals(java.math.BigInteger.ZERO))
+        return 1; // mod--->>> modulus
         return 0;
     }
     public static void main(String[] args) {

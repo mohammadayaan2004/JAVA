@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "prog08_CheckIfDivisibleBy36",
+      "request": "launch",
+      "mainClass": "GFG.prog08_CheckIfDivisibleBy36",
+      "projectName": "JAVA_14d1071d"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
