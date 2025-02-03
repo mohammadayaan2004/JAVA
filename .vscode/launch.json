@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "prog09_CheckAnIntegerIsPowerOf3OrNo",
+      "request": "launch",
+      "mainClass": "GFG.prog09_CheckAnIntegerIsPowerOf3OrNo",
+      "projectName": "JAVA_14d1071d"
+    },
+    {
+      "type": "java",
       "name": "prog08_CheckIfDivisibleBy36",
       "request": "launch",
       "mainClass": "GFG.prog08_CheckIfDivisibleBy36",
