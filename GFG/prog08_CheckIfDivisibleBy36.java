@@ -1,3 +1,24 @@
+/*
+https://www.geeksforgeeks.org/problems/check-if-divisible-by-363149/1
+
+Check if divisible by 36
+
+Given a number S in the form of string, the task is to find if it's divisible by 36 or not. 
+Example 1:
+
+Input:
+S = "72"
+Output:
+1
+ 
+
+Example 2:
+
+Input:
+7
+Output:
+0
+ */
 package GFG;
 import java.util.Scanner;
 //import java.math.BigInteger;
