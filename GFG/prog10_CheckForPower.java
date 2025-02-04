@@ -38,7 +38,14 @@ Constraints:
 package GFG;
 import java.util.Scanner;
 public class prog10_CheckForPower {
-    public static int isPowerOfAnother(Long X, Long Y) {
+    public static long isPowerOfAnother(Long X, Long Y) {
+        //O(logₓY)
+        //if (X==1) return (Y==1)? 1:0;
+        //while(Y%X==0){
+        //    Y/=X;
+        //}
+        //return (Y==1)? 1:0;
+        //O(1)
         if (X==1) return (Y==1)? 1:0;
         double result=Math.log(Y)/Math.log(X);
         return (result==Math.floor(result))? 1 : 0;
