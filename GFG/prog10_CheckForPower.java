@@ -27,7 +27,7 @@ Your Task:
 
 You don't need to read input or print anything. Your task is to complete the function isPowerOfAnother() which takes an integer and returns 1 if y is the power of x, else return 0.
 
-Expected Time Complexity: O(logx?(y))
+Expected Time Complexity: O(logx(y))
 Expected Auxiliary Space: O(1)
 
 Constraints: 

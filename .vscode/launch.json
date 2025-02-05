@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "prog02_primitiveDatatype",
+      "request": "launch",
+      "mainClass": "prog02_primitiveDatatype",
+      "projectName": "JAVA_14d1071d"
+    },
+    {
+      "type": "java",
       "name": "prog10_CheckForPower",
       "request": "launch",
       "mainClass": "GFG.prog10_CheckForPower",
