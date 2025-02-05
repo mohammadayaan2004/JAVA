@@ -41,7 +41,12 @@ public class prog11_CheckIfANumberCanBeExpressedAsXpowerY {
         if (N == 1) return 1;
         for(int i=2;i*i<=N;i++){
             double value=Math.log(N)/Math.log(i);
+            if (Math.abs(value - Math.round(value)) < 1e-6) {
+                return 1;  // If so, a can be expressed as x^y
+            }
         }
+        return 0;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a Number :- ");
