@@ -6,8 +6,8 @@ public class prog54_FloorFunction{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter a Number :- ");
-        float num=sc.nextFloat();
-        System.out.print(Math.floor(num));
+        float num=sc.nextFloat();//675498.907667 
+        System.out.print(Math.floor(num));//675498.0
         sc.close();
     }
 }
