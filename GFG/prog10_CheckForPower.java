@@ -22,7 +22,6 @@ Explanation:
 Any power of 1 is not 
 equal to 8.
  
-
 Your Task:
 
 You don't need to read input or print anything. Your task is to complete the function isPowerOfAnother() which takes an integer and returns 1 if y is the power of x, else return 0.

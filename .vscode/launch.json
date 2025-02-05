@@ -3,30 +3,9 @@
   "configurations": [
     {
       "type": "java",
-      "name": "prog02_primitiveDatatype",
-      "request": "launch",
-      "mainClass": "prog02_primitiveDatatype",
-      "projectName": "JAVA_14d1071d"
-    },
-    {
-      "type": "java",
       "name": "prog10_CheckForPower",
       "request": "launch",
       "mainClass": "GFG.prog10_CheckForPower",
-      "projectName": "JAVA_14d1071d"
-    },
-    {
-      "type": "java",
-      "name": "prog09_CheckAnIntegerIsPowerOf3OrNo",
-      "request": "launch",
-      "mainClass": "GFG.prog09_CheckAnIntegerIsPowerOf3OrNo",
-      "projectName": "JAVA_14d1071d"
-    },
-    {
-      "type": "java",
-      "name": "prog08_CheckIfDivisibleBy36",
-      "request": "launch",
-      "mainClass": "GFG.prog08_CheckIfDivisibleBy36",
       "projectName": "JAVA_14d1071d"
     },
     {
