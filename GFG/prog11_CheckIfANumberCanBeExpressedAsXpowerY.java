@@ -38,15 +38,26 @@ public class prog11_CheckIfANumberCanBeExpressedAsXpowerY {
     //    }
     //    return 0;
     //    O(sqrt(N)×N×logN) ==O(N^1.5 logN)
+
+    //    if (N == 1) return 1; 
+    //    for (int i = 2; i * i <= N; i++) {
+    //        double result = Math.log(N) / Math.log(i);  
+    //        if (result == Math.floor(result)) { 
+    //            return 1; 
+    //        }
+    //    }
+    //    return 0; 
+    // O(sqrt(N))
+
     if (N == 1) return 1; 
     for (int i = 2; i * i <= N; i++) {
-        double result = Math.log(N) / Math.log(i);  
-        if (result == Math.floor(result)) { 
-            return 1; 
+        int power=i;
+        while(power<=N){
+            power*=i;
+            if(power==N) return 1;
         }
     }
-    return 0; 
-    // O(sqrt(N))
+    return 0;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
