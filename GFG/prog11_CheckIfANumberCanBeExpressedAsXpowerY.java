@@ -26,44 +26,51 @@ Constraints:
 */
 
 package GFG;
+
 import java.util.Scanner;
+
 public class prog11_CheckIfANumberCanBeExpressedAsXpowerY {
     public static int checkPower(int N) {
-    //    for(int i=1;i<=Math.sqrt(N);i++){
-    //        for(int j=1;j<=N;j++){
-    //            if(Math.pow(i,j)==N){
-    //                return 1;
-    //            }
-    //        }
-    //    }
-    //    return 0;
-    //    O(sqrt(N)×N×logN) ==O(N^1.5 logN)
+        // METHOD 1
+        // for(int i=1;i<=Math.sqrt(N);i++){
+        // for(int j=1;j<=N;j++){
+        // if(Math.pow(i,j)==N){
+        // return 1;
+        // }
+        // }
+        // }
+        // return 0;
+        // O(sqrt(N)×N×logN) ==O(N^1.5 logN)
 
-    //    if (N == 1) return 1; 
-    //    for (int i = 2; i * i <= N; i++) {
-    //        double result = Math.log(N) / Math.log(i);  
-    //        if (result == Math.floor(result)) { 
-    //            return 1; 
-    //        }
-    //    }
-    //    return 0; 
-    // O(sqrt(N))
+        // METHOD 2
+        // if (N == 1) return 1;
+        // for (int i = 2; i * i <= N; i++) {
+        // double result = Math.log(N) / Math.log(i);
+        // if (result == Math.floor(result)) {
+        // return 1;
+        // }
+        // }
+        // return 0;
+        // O(sqrt(N))
 
-    if (N == 1) return 1; 
-    for (int i = 2; i * i <= N; i++) {
-        int power=i;
-        while(power<=N){
-            power*=i;
-            if(power==N) return 1;
+        // METHOD 3
+        if (N == 1)
+            return 1;
+        for (int i = 2; i * i <= N; i++) {
+            int power = i;
+            while (power <= N) {
+                power *= i;
+                if (power == N)
+                    return 1;
+            }
         }
-    }
-    return 0;
+        return 0;
+        // O(sqrt(N))
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a Number :- ");
         int num = sc.nextInt();
-        
         System.out.print("Result :- " + checkPower(num));
         sc.close();
     }
