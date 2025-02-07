@@ -29,11 +29,15 @@ package GFG;
 import java.util.Scanner;
 public class prog12_PerfectSquaresInARange {
     public static int numOfPerfectSquares(int a, int b) {
-        int cube = 0;
-        for(int i=a;i<=b;i++){
-            cube=i*i;
-            
+        int i=0,count=0;
+        while(i*i<a){
+            i++;
         }
+        while(i*i<=b){
+            i++;
+            count++;
+        }
+        return count;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
