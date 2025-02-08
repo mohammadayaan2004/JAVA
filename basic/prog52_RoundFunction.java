@@ -5,7 +5,7 @@ public class prog52_RoundFunction {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter a Number :- ");
-        double num=sc.nextDouble();//3456789876543.0987656354657687
+        double num=sc.nextDouble();//3456789876543.09876
         System.out.print(Math.round(num));//3456789876543
         sc.close();
     }
