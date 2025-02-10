@@ -1,5 +1,7 @@
 /*
 https://www.geeksforgeeks.org/problems/check-perfect-square5253/1
+Note: Try to solve the question using only addition and subtraction operation.
+
 
 Check perfect square
 Example 1:
@@ -15,7 +17,6 @@ N = 49
 Output:1
 Explanation: 49 is a perfect square.
  
-
 Your Task:
 You don't need to read input or print anything. Your task is to complete the function checkPerfectSquare() which takes an integer N and returns 1 if it is a perfect square, else 0.
 
@@ -34,9 +35,19 @@ public class prog13_CheckPerfectSquare {
     //        if(i*i==N) return 1;
     //    }
     //    return 0;
+
     //    METHOD 2 :- O(1)
-        int sqrt=(int) Math.sqrt(N);
-        return (sqrt*sqrt==N)?1:0;
+    //    int sqrt=(int) Math.sqrt(N);
+    //    return (sqrt*sqrt==N)?1:0;
+
+    //    METHOD 3 :- O(√N)
+        int sum=0,old=1;
+        while(sum<N){
+            sum+=old;
+            old+=2;
+            if(sum==N) return 1;
+        }
+        return 0;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
