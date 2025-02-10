@@ -41,10 +41,10 @@ public class prog13_CheckPerfectSquare {
     //    return (sqrt*sqrt==N)?1:0;
 
     //    METHOD 3 :- O(√N)
-        int sum=0,old=1;
+        int sum=0,odd=1;
         while(sum<N){
-            sum+=old;
-            old+=2;
+            sum+=odd;
+            odd+=2;
             if(sum==N) return 1;
         }
         return 0;
