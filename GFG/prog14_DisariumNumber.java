@@ -31,25 +31,26 @@ Constraints:
 package GFG;
 import java.util.Scanner;
 public class prog14_DisariumNumber {
-    public static int count(int N){
-        int count=0;
-        while(N>0){
-            N/=10;
-            count++;
-        }
-        return count;
-    }
-    public static int isDisarium(int N) {
-        int temp=N;
-        int sum=0;
-        int totalDigit=count(N);
-        while(temp>0){
-            int lastdigit=temp%10;
-            sum+=Math.pow(lastdigit,totalDigit);
-            totalDigit--;
-            temp/=10;
-        }
-        return (sum==N)?1:0;   
+    //METHOD 1:--- 
+    //public static int count(int N){
+    //    int count=0;
+    //    while(N>0){
+    //        N/=10;
+    //        count++;
+    //    }
+    //    return count;
+    //}
+    //public static int isDisarium(int N) {
+    //    int temp=N;
+    //    int sum=0;
+    //    int totalDigit=count(N);
+    //    while(temp>0){
+    //        int lastdigit=temp%10;
+    //        sum+=Math.pow(lastdigit,totalDigit);
+    //        totalDigit--;
+    //        temp/=10;
+    //    }
+    //    return (sum==N)?1:0;   
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
