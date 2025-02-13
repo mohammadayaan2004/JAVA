@@ -50,8 +50,21 @@ public class prog14_DisariumNumber {
     //        totalDigit--;
     //        temp/=10;
     //    }
-    //    METHOD 2:--- 
-
+    //    METHOD 2:--- O(logN ⋅ loglogN)
+    public static int isDisarium(int N) {
+        int temp=N;
+        int sum=0;
+        int totalDigit=String.valueOf(N).length();
+        while(temp>0){
+            int lastdigit=temp%10;
+            sum+=Math.pow(lastdigit,totalDigit);
+            totalDigit--;
+            temp/=10;
+        }
+        return (sum==N)?1:0;  
+        //    METHOD 3:--- O()
+ 
+    }          
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a Number :- ");
