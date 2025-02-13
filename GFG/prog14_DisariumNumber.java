@@ -31,16 +31,16 @@ Constraints:
 package GFG;
 import java.util.Scanner;
 public class prog14_DisariumNumber {
-    //METHOD 1:--- 
-    //public static int count(int N){
+    //    METHOD 1:--- O(logN ⋅ loglogN)
+    //    public static int count(int N){
     //    int count=0;
     //    while(N>0){
     //        N/=10;
     //        count++;
     //    }
     //    return count;
-    //}
-    //public static int isDisarium(int N) {
+    //    }
+    //    public static int isDisarium(int N) {
     //    int temp=N;
     //    int sum=0;
     //    int totalDigit=count(N);
@@ -50,8 +50,8 @@ public class prog14_DisariumNumber {
     //        totalDigit--;
     //        temp/=10;
     //    }
-    //    return (sum==N)?1:0;   
-    }
+    //    METHOD 2:--- 
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a Number :- ");
