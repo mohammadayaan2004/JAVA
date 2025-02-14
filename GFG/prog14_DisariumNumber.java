@@ -62,12 +62,21 @@ public class prog14_DisariumNumber {
     //    }
     //    return (sum==N)?1:0;  
     //    METHOD 3:--- O(log n)
+    private static int[][] power=new int[10][11];
+    static{
+        for(int digit=0;digit<=9;digit++){
+            power[digit][0]=1;
+            for(int exp=1;exp<=10;exp++){
+                power[digit][exp]=power[digit][exp-1]*digit;
+            }
+        }
+    }
     public static int isDisarium(int N){
         int sum=0,temp=N;
         int totalDigit=(int) Math.log10(N)+1;
         while(temp>0){
         int lastdigit=temp%10;
-        sum+=Math.pow(lastdigit,totalDigit);
+        sum += power[lastdigit][totalDigit];
         totalDigit--;
         temp/=10;
         }
