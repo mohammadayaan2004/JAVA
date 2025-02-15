@@ -50,6 +50,7 @@ public class prog14_DisariumNumber {
     //        totalDigit--;
     //        temp/=10;
     //    }
+    //    return (sum==N)?1:0;  
     //    METHOD 2:--- O(loglogN)
     //    public static int isDisarium(int N) {
     //    int temp=N,sum=0;
