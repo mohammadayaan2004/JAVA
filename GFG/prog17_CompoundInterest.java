@@ -45,6 +45,7 @@ Constraints:
 package GFG;
 import java.util.Scanner;
 public class prog17_CompoundInterest {
+    //O(log(N * T))
     static int getCompundInterest(int P , int T , int N , int R) {
         double rate = R / 100.0;
         double amount = P * Math.pow((1 + rate / N), (N * T));
