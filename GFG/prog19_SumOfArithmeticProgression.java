@@ -34,7 +34,7 @@ package GFG;
 import java.util.Scanner;
 public class prog19_SumOfArithmeticProgression {
     public static int sum_of_ap(int n, int a, int d){
-        return (n * (2 * a + (n - 1) * d)) / 2;
+        return (n * (2 * a + (n - 1) * d))/2;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
