@@ -17,7 +17,8 @@ Explanation: The simple interest on 999 at a rate of 9% across 9 time
 periods is 809.19
 Constraints:
 1<=p<=105
-1<=r, t<=100
+1<=r, 
+t<=100
 */
 package GFG;
 import java.util.Scanner;
