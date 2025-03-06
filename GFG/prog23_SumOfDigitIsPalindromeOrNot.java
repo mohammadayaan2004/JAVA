@@ -22,6 +22,7 @@ package GFG;
 import java.util.Scanner;
 public class prog23_SumOfDigitIsPalindromeOrNot {
     public static boolean isDigitSumPalindrome(int n) {
+        //Time complexity:- O(log n)
         int sum=0;
         while(n>0){
             sum+=n%10;
