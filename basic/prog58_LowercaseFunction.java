@@ -1,3 +1,4 @@
+// .toLowerCase() function is used to convert all characters in a string to lowercase.
 import java.util.Scanner;
 public class prog58_LowercaseFunction{
     public static void main(String[] args) {
