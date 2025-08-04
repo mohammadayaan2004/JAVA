@@ -6,7 +6,7 @@ public class prog57_EqualFunction {
         System.out.print("Enter :- ");
         String name1=sc.nextLine();
         System.out.print("Enter :- ");        
-        String name2=sc.nextLine();
+        String name2=sc.nextLine();      
         System.out.println(name1.equals(name2));
         System.out.println(name1.equals("MAK"));
         sc.close();
