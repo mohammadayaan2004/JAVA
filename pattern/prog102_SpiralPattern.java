@@ -4,21 +4,45 @@
 11 16 15 6 
 10  9  8 7
 */
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 public class prog102_SpiralPattern {
-    public static void nForrest(int n) {
-        for (int i = 1; i <= 2 * n; i++) {
-            for (int j = 1; j <= 2 * n; j++) {
-                
+    public List<Integer> spiralOrder(int[][] matrix) {  
+        int n=matrix.length;
+        int m=matrix[0].length;     
+        int top=1,left=1,right=m-1,bottom=n-1;
+        List<Integer> ans =new ArrayList<>();
+
+        while(top<=bottom && left<=right){
+            for(int i=left;i<=right;i++){
+                ans.add(matrix[top][i]);
             }
-            System.out.println();
+            top++;
+
+            for(int i=top;i<=bottom;i++){
+                ans.add(matrix[i][right]);
+            }
+            right--;
+
+             for (int i = right; i >= left; i--) {
+                    ans.add(matrix[bottom][i]);
+                }
+                bottom--;
+
+             for (int i = bottom; i >= top; i--) {
+                    ans.add(matrix[i][left]);
+                }
+                left++;    
+
         }
+        return ans;
     }
     public static void main(String[] args) {
         System.out.print("Enter the number of rows: ");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        nForrest(n);
+        List<Integer> result = spiralOrder(matrix);
         sc.close();
     }
 }

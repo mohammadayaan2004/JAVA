@@ -13,8 +13,9 @@ Input: s = "geeks4geeks"
 Output: 4
 Explanation: 4 is the only number, so the sum is 4.
 Constraints:
-1 <= length of the string <= 105
-The sum of Numbers <= 105
+1 <= length of the string <= 10^5
+The sum of Numbers <= 10^5
+    
     public static int findSum(String s) {
         int sum=0;
         String temp="0";
@@ -35,15 +36,19 @@ The sum of Numbers <= 105
  */
 package GFG;
 import java.util.Scanner;
-public class prog05_SumOfNumberInStrings {
+public class prog05_SumOFNumberINStrings {
     public static int findSum(String s) {
         int sum=0,num=0;
         for(int i=0;i<s.length();i++){
             char ch=s.charAt(i);
             if(Character.isDigit(ch)){
                 num=num*10+(ch -'0');
+                                System.out.println("Digit found: " + ch + ", current num: " + num);
+
             }
             else{
+                                System.out.println("Non-digit found: " + ch + ", adding num: " + num + " to sum");
+
                 sum+=num;
                 num=0;
             }

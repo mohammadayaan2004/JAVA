@@ -40,7 +40,7 @@ public class prog27_SquaresInNmutipyNChessboard {
     public static Long squaresInChessBoard(Long N){
         long sum = 0;
         for(long i=1;i<=N;i++){
-            sum+=i;
+            sum+=i*i;
         }
         return sum;
     }
