@@ -61,7 +61,7 @@ public class prog11_Q66_PlusOne {
         System.out.print("Please Enter a Number :- ");
         int num = sc.nextInt();
 
-        System.out.print("Result :- " + plusOne(num));
+        System.out.print("Result :- " + ple(num));
         sc.close();
     }
 }

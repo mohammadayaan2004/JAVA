@@ -24,24 +24,34 @@ Follow up: Could you do it without any loop/recursion in O(1) runtime?
 package leetcode;
 import java.util.Scanner;
 public class prog06_Q258_AddDigits {
-    public static int addDigits(int n) {
-        //int sum, remainder;
-        //while (n > 9) {
-        //    sum=0;
-        //    while (n > 0) {
-        //         remainder = n % 10;
-        //        sum += remainder;
-        //        n /= 10;
-        //    }
-        //    n=sum;
-        // }
-        //return n;
+    public static int addDigits(int num) {
         //Time Complexity: O(log(n))
         //Space Complexity: O(1) (constant space)
-        if(n==0) return 0;
-        return 1 +(n-1)%9;
+        //                     int rem;
+        //                     int sum = 0 ;
+        //                     while(num>0){
+        //                         rem=num%10;
+        //                         sum+=rem;
+        //                         num/=10;
+        //                     }
+        //                     if(sum>=10){
+        //                             return addDigits(sum);
+        //                     }
+        //                     return sum;
+
+        // Digital Root Rule
+        //    if(num==0) return 0;
+        //    return 1 +(num-1)%9;
         //Time Complexity: O(1) because this formula directly computes the result.
         //Space Complexity: O(1) (constant space).
+
+        int a=0,b=0;
+        while(num>=10){
+            a=num%10;
+            b=num/10;
+            num=a+b;
+        }
+        return num;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
