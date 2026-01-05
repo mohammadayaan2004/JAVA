@@ -29,12 +29,27 @@ import java.util.Scanner;
 import java.util.Set;
 public class prog04_Q1832_CheckifSentenceISPragram{
     public static boolean checkIfPangram(String s) {
+        //       Method 1 
+        //       | Time   | O(n)
+        //       | Space  | O(1)
+        /* 
         Set<Character> set =new HashSet<>();
         for(int i=1;i<=s.length();i++)
         {
             set.add(s.charAt(i));
         }
         return set.size()==26;
+        */
+        //       Method 2 
+        //       | Time   | O(n)
+        //       | Space  | O(1)
+        if(s.length()<26) return false;
+        for(char ch='a';ch<='z';ch++){
+            if(s.indexOf(ch)<0){
+                return false;
+            }
+        }
+        return true;
     }
     public static void main(String[] args) {
         System.out.print("Enter Number :- ");
