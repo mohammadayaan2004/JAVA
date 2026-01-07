@@ -48,15 +48,18 @@ import java.util.Scanner;
 public class prog14_Q2042_CheckIfNumbersAreAscendingInASentence {
     public static boolean areNumbersAscending(String s) {
         int prev = -1;
-        int num ;
+        int num = 0;
         for(int ch =0;ch<s.length();ch++){
             if(Character.isDigit(s.charAt(ch))){
-                num = ch;
                 if(prev >= num) {return false;}
-                else {prev = num ;}
+                else {prev = num ;
+                    num=0;
+                }
             }
-        }
+        } /// incomplete code 
         return true;
+}
+
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
