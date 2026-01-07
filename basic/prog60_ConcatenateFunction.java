@@ -1,4 +1,3 @@
-// .toUpperCase() function is used to convert all characters in a string to uppercase.
 import java.util.Scanner;
 public class prog60_ConcatenateFunction{
     public static void main(String[] args) {

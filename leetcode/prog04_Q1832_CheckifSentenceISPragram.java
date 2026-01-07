@@ -24,9 +24,9 @@ sentence consists of lowercase English letters.
  */
 package leetcode;
 
-//import java.util.HashSet;
+import java.util.HashSet;
 import java.util.Scanner;
-//import java.util.Set;
+import java.util.Set;
 public class prog04_Q1832_CheckifSentenceISPragram{
     public static boolean checkIfPangram(String s) {
         //       Method 1 
