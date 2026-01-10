@@ -64,24 +64,21 @@ Constraints:
 
 */
 package leetcode;
-import java.util.Map;
 import java.util.Scanner;
-import java.util.HashMap;
 public class prog18_Q12_IntegerToRoman {
     public static String intToRoman(int num) {
-        Map<Character , Integer> map = new Hashmap<>();
-        map.put('I', 1);
-        map.put('V', 5);
-        map.put('X', 10);
-        map.put('L', 50);
-        map.put('C', 100);
-        map.put('D', 500);
-        map.put('M', 1000); 
-        
+        int[] values ={1000,500,100,50,10,5,1};
+        String[] symbols={"M","D","C","L","X","V","I"};
+        for(int i : values){
+            if(num = values){
+             //incomplete solution   
+            }
+        }
+        return ;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Please Enter a String :- ");
+        System.out.print("Please Enter a Number :- ");
         int num = sc.nextInt();
 
         System.out.print("Result :- " + intToRoman(num));
