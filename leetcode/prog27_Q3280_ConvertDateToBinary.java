@@ -52,7 +52,16 @@ public class prog27_Q3280_ConvertDateToBinary {
         return Integer.toBinaryString(year) + "-" +
                 Integer.toBinaryString(month) + "-" +
                 Integer.toBinaryString(day);
-        }
+    }
+    /*
+    public static String convertDateToBinary(String date) {
+    String[] p = date.split("-");
+
+    return Integer.toBinaryString(Integer.parseInt(p[0])) + "-" +
+           Integer.toBinaryString(Integer.parseInt(p[1])) + "-" +
+           Integer.toBinaryString(Integer.parseInt(p[2]));
+}
+ */
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
