@@ -53,7 +53,7 @@ public class prog28_Q338_CountingBits {
         System.out.print("Please Enter a Number :- ");
         int num = sc.nextInt();
 
-System.out.print("Result :- " + Arrays.toString(countBits(num)));
+        System.out.print("Result :- " + Arrays.toString(countBits(num)));
         sc.close();
     }
 }
