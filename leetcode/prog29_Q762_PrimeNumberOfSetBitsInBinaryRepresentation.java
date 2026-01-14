@@ -43,7 +43,6 @@ import java.util.Scanner;
 public class prog29_Q762_PrimeNumberOfSetBitsInBinaryRepresentation {
     public static int countPrimeSetBits(int left, int right) {
         // incomplete code 
-        return ;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

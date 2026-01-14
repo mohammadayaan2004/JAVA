@@ -42,5 +42,7 @@ All integers in nums have the same number of digits.
 package leetcode;
 
 public class prog32_Q3153_SumOfDigitDifferencesOfAllPairs {
-    
+    public static void main(String[] args) {
+        
+    }    
 }

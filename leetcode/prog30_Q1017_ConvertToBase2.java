@@ -28,3 +28,11 @@ Constraints:
 
 0 <= n <= 109
 */
+package leetcode;
+
+public class prog30_Q1017_ConvertToBase2 {
+
+    public static void main(String[] args) {
+        
+    }
+}
