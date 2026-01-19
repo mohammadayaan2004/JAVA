@@ -27,7 +27,32 @@ import java.util.Scanner;
 
 public class prog35_Q67_AddBinary {
     public static String addBinary(String a, String b) {
-        
+        // binary number 
+        int n1 = Integer.parseInt(a);
+        int n2 = Integer.parseInt(b);
+        int n = a.length()> b.length() ? a.length() :b.length();
+        int carry =0;
+        int sum=0;
+        int place=1;
+        while(n>0){
+            int ld1=n1%10;
+            int ld2=n2%10;
+            if(ld1 == 0 && ld2 == 0){
+                sum=sum*place+0;
+            }
+            else if((ld1 ==1 && ld2==0) ||(ld1 ==0 && ld2==1) ){
+                sum=sum*place+1;
+            }
+            else if(ld1 == 1 && ld2 ==1){
+                sum=sum*place+0;
+                carry=1;
+            }
+            place*=10;
+            n1/=10;
+            n2/=10;
+            n--;
+        }
+        return String.valueOf(carry*10+sum);
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
