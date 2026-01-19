@@ -40,16 +40,16 @@ package leetcode;
 import java.util.Scanner;
 import java.util.Arrays;
 public class prog42_Q268_MissingNumber {
-    public static int missingNumber(int[] nums) {
+   public static int missingNumber(int[] nums) {
+        // O(n logn)
         Arrays.sort(nums);
-        int n=nums.length;
         int i=0;
-        for(;i< n;i++){
+        for(;i < nums.length;i++){
             if(nums[i]!=i){break;}
         }
         return i;
-    }    
-    public static void main(String[] args) {
+        
+    }       public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         // input size
